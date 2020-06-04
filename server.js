@@ -20,7 +20,7 @@ function logger(req, res, next) {
 
 
 server.get('/', (req, res) => {
-  res.status(200).json({ enviorment: process.env.NODE_ENV });
+  res.status(200).json({ enviorment: process.env.NODE_ENV, port: process.env.PORT });
 });
 
 
